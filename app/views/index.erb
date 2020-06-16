@@ -1,0 +1,11 @@
+<h4> List of books </h4>
+<ul>
+    <% @puppies.each do |puppy| %>
+    
+         <a href="/puppy/<%= puppy.id %>">
+
+            <li> <%= puppy.name %> </li>
+
+        </a> 
+    <% end %>
+</ul>
